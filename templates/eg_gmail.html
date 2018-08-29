@@ -5,7 +5,7 @@
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="{{url_for('static',filename='css/materialize.min.css')}}"  media="screen,projection"/>
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -96,11 +96,11 @@
     </li>
   </ul>
   <div class="fixed-action-btn direction-top" style="bottom: 45px;right:24px;">
-	  <a href="index1.html" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+	  <a href="{{url_for('home')}}" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
 </div>
 
 <!--JavaScript at end of body for optimized loading-->
-      <script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="{{url_for('static',filename='js/materialize.min.js')}}"></script>
     </body>
   </html>
 
